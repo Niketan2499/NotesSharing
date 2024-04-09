@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Sharing Website</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+   
+</head>
+<body style="background: linear-gradient(90.18deg, #fab3ee, #b65da1 50%, #fab3ee);">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background: -webkit-linear-gradient(left,#4f024f,#6a036a,#8d048d, #b905b9, #6a036a, #4f024f);">
+        <div class="container">
+            <a class="navbar-brand" href="#">Notes Sharing</a>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Add other navigation items here -->
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand" href="{% url 'login' %}">Login/SignUp</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="jumbotron text-center" style="background: linear-gradient(90.18deg, #fab3ee, #b65da1 50%, #fab3ee);">
+        <div class="container">
+            <h1 class="display-4" style="color: #fff; font-weight: bold; margin-bottom: 50px;">Welcome to Notes Sharing</h1>
+            <p class="lead" style="font-weight: bold; margin-bottom: 50px;">Share and discover notes on various topics.</p>
+            <a href="{% url 'login' %}" class="btn  btn-outline-light btn-lg">Get Started</a>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.facebook.com" class="text-white" style="margin-right: 50px;"><i class="fab fa-facebook fa-2x mr-3"></i></a>
+                    <a href="https://www.instagram.com" class="text-white" style="margin-right: 50px;"><i class="fab fa-instagram fa-2x mr-3"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=1234567890" class="text-white" style="margin-right: 50px;"><i class="fab fa-whatsapp fa-2x mr-3"></i></a>
+                    <a href="mailto:example@example.com" class="text-white"><i class="fas fa-envelope fa-2x" style="margin-right: 50px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and jQuery scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
